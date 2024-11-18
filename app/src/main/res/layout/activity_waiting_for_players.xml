@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Waiting for Players Message -->
+    <TextView
+        android:id="@+id/tvWaitingMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting for players to join..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lobby Name -->
+    <TextView
+        android:id="@+id/tvLobbyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lobby: Game Room"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Players in Game -->
+    <TextView
+        android:id="@+id/tvPlayersInGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Players in Game: 1"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Scoreboard Section -->
+    <TextView
+        android:id="@+id/tvScoreboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scoreboard"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- List of Players and Scores -->
+    <LinearLayout
+        android:id="@+id/scoreboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Example of a player entry, more will be added dynamically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Player1"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 50"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- More players will be added dynamically -->
+    </LinearLayout>
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:enabled="false" /><!-- Button disabled until enough players join -->
+</LinearLayout>

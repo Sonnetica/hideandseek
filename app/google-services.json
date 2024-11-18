@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1020248855899",
+    "project_id": "tchideandseek",
+    "storage_bucket": "tchideandseek.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020248855899:android:777ee4b007b5f0cc2df67e",
+        "android_client_info": {
+          "package_name": "com.example.tinycircuit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_CtxntJGI_YuGjh7J5oK56XLJf3pwOpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

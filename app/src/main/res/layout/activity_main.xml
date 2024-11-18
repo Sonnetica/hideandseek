@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Game Status -->
+    <TextView
+        android:id="@+id/tvGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Status: Hiding"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Remaining Time -->
+    <TextView
+        android:id="@+id/tvRemainingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Remaining: 60 seconds"
+        android:textSize="18sp"
+        android:layout_below="@id/tvGameStatus"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Number of Hiding Players -->
+    <TextView
+        android:id="@+id/tvHidingPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiders Remaining: 5"
+        android:textSize="18sp"
+        android:layout_below="@id/tvRemainingTime"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Powerups Section (Initially hidden) -->
+    <TextView
+        android:id="@+id/tvPowerupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Powerups"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvHidingPlayers"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/powerupScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPowerupTitle"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"> <!-- Initially hidden -->
+
+        <LinearLayout
+            android:id="@+id/powerupContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Example Powerups -->
+            <Button
+                android:id="@+id/btnFreezeSeeker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freeze Seeker" />
+
+            <Button
+                android:id="@+id/btnSpeedBoost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed Boost" />
+
+            <Button
+                android:id="@+id/btnInvisibleMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invisible Mode" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Open Chat Button (Opens the chat activity for hiders) -->
+    <Button
+        android:id="@+id/btnOpenChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Chat"
+        android:textSize="18sp"
+        android:layout_below="@id/powerupScrollView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Debug/Status Area -->
+    <TextView
+        android:id="@+id/tvDebugStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debug Status: Connected"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

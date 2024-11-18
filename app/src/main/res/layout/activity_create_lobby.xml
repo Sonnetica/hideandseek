@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Game Parameters -->
+    <TextView
+        android:id="@+id/tvLobbyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Lobby"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvHidingTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiding Time (seconds):" />
+
+    <EditText
+        android:id="@+id/etHidingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter hiding time" />
+
+    <TextView
+        android:id="@+id/tvSeekerTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seeker Time (seconds):"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/etSeekerTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter seeker time" />
+
+    <TextView
+        android:id="@+id/tvPlayerCountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Hiders:"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/etPlayerCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter number of hiders" />
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
